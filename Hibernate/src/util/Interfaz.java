@@ -20,6 +20,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JRadioButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.ButtonGroup;
 
 public class Interfaz {
 	 HibernateHelper hibernateHelper = new HibernateHelper();
@@ -42,6 +43,7 @@ public class Interfaz {
 	JRadioButton rbnRespu2;
 	JRadioButton rbnRespu3;
 	JRadioButton rbnRespu4;
+	private final ButtonGroup buttonGroup = new ButtonGroup();
 
 	/**
 	 * Launch the application.
@@ -133,12 +135,16 @@ public class Interfaz {
 		JLabel labelNumeroPregunta = DefaultComponentFactory.getInstance().createLabel("num");
 		
 		 rbnRespu1 = new JRadioButton("verdadera");
+		 buttonGroup.add(rbnRespu1);
 		
 		 rbnRespu2 = new JRadioButton("verdadera");
+		 buttonGroup.add(rbnRespu2);
 		
 		 rbnRespu3 = new JRadioButton("verdadera");
+		 buttonGroup.add(rbnRespu3);
 		
 		 rbnRespu4 = new JRadioButton("verdadera");
+		 buttonGroup.add(rbnRespu4);
 		GroupLayout groupLayout = new GroupLayout(frame.getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
