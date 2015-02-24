@@ -12,9 +12,6 @@ public class Respuestas implements java.io.Serializable {
 	private Boolean solucion;
 	private Integer idPreguntas;
 
-	public Respuestas() {
-	}
-
 	public Respuestas(String respuesta, Boolean solucion, Integer idPreguntas) {
 		this.respuesta = respuesta;
 		this.solucion = solucion;
